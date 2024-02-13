@@ -6,3 +6,5 @@ cp -r $WORKING_DIR/$DESTINATION/* $WORKING_DIR
 rm -rf $WORKING_DIR/$DESTINATION
 
 npm install
+
+sed -i '/run = \["bash", "init.sh"\]/d' .replit
